@@ -1,31 +1,23 @@
 <template>
-  <div class="home">    
-    <Start :test="test" />
+  <div>
+    <Start  />
+    <h1>Hello world</h1>
+
+    <Cards />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Start from '@/components/Start.vue'
+import Start from "../components/Start";
+import Cards from "../components/Cards";
 
 export default {
-  name: 'Home',
-  data(){
-    return {
-      test: [
-        {
-          title:"I am a title 1 ",
-          id:1
-        },
-        {
-          title:"I am a title 2 ",
-          id:2
-        }
-      ]
-    }
-  },
+  name: "Home",
+ 
   components: {
-    Start
-  }
-}
+    Start,
+    Cards,
+  },
+};
 </script>
